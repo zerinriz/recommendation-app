@@ -46,6 +46,7 @@ function App() {
         <Button disabled={disabled} onClick={randomNumber}>
           Recommended
         </Button>
+        <div style={{ marginTop: 20 }} />
         <BookList
           booksMetaInfo={booksMetaInfo}
           setBooksMetaInfo={setBooksMetaInfo}
