@@ -15,9 +15,7 @@ function BookCard({
       <Image src={image} wrapped ui={false} />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
-        <Card.Description>
-          {desc.length > 150 ? `${desc.substring(0, 150)} ...` : desc}
-        </Card.Description>
+        <Card.Description>{desc}</Card.Description>
       </Card.Content>
       <Popup
         on="click"

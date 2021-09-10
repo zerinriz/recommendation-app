@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Input } from "semantic-ui-react";
+import { Form, Input, Button } from "semantic-ui-react";
 
 function SearchField({ onSearch }) {
   const [query, setQuery] = useState(null);
@@ -12,11 +12,11 @@ function SearchField({ onSearch }) {
   return (
     <Form onSubmit={onSubmit}>
       <Input
-        icon="search"
         type="text"
         placeholder="Search"
         onChange={(e) => setQuery(e.target.value)}
       ></Input>
+      <Button icon="search" onClick={onSubmit}></Button>
     </Form>
   );
 }
