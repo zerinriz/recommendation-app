@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Popup, Image } from "semantic-ui-react";
+import { Button, Card, Popup } from "semantic-ui-react";
 
 function BookCard({
   image,
@@ -12,7 +12,7 @@ function BookCard({
 }) {
   return (
     <Card fluid>
-      <Image alt="Slika" src={image} fluid />
+      <img alt="Slika" src={image} style={{ height: 200 }} />
       <Card.Content style={{ overflow: "auto", maxHeight: 200 }}>
         <Card.Header>{title}</Card.Header>
         <Card.Description>{desc}</Card.Description>
