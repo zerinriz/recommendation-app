@@ -11,13 +11,15 @@ function BookCard({
   ratingCnt,
 }) {
   return (
-    <Card fluid>
-      <img alt="Slika" src={image} style={{ height: 200 }} />
-      <Card.Content style={{ overflow: "auto", maxHeight: 200 }}>
-        <Card.Header>{title}</Card.Header>
-        <Card.Description>{desc}</Card.Description>
-      </Card.Content>
+    <Card fluid centered color="blue">
       <Card.Content extra>
+        <img alt="Slika" src={image} style={{ height: 200 }} />
+      </Card.Content >
+      <Card.Content style={{ overflow: "auto", maxHeight: 200 }} >
+        <Card.Header >{title}</Card.Header>
+        <Card.Description >{desc}</Card.Description>
+      </Card.Content>
+      <Card.Content extra >
         <Popup
           on="click"
           content={
@@ -30,7 +32,7 @@ function BookCard({
               </Card.Content>
             </Card>
           }
-          trigger={<Button fluid compact content="Details" />}
+          trigger={<Button color="blue" fluid compact content="Details" />}
         />
       </Card.Content>
     </Card>

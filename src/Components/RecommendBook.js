@@ -24,7 +24,7 @@ function RecommendBook({ open, setOpen, randomBook }) {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button onClick={() => setOpen(false)}>Close</Button>
+        <Button color="blue" onClick={() => setOpen(false)}>Close</Button>
       </Modal.Actions>
     </Modal>
   );

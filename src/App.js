@@ -43,7 +43,7 @@ function App() {
         <br />
         <SearchField onSearch={onSearch} />
         <br />
-        <Button disabled={disabled} onClick={randomNumber}>
+        <Button color="blue" disabled={disabled} onClick={randomNumber}>
           Recommended
         </Button>
         <div style={{ marginTop: 20 }} />
