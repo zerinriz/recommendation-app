@@ -16,7 +16,7 @@ function SearchField({ onSearch }) {
         placeholder="Search"
         onChange={(e) => setQuery(e.target.value)}
       ></Input>
-      <Button icon="search" onClick={onSubmit}></Button>
+      <Button icon="search"></Button>
     </Form>
   );
 }
